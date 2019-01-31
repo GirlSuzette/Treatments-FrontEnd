@@ -61,9 +61,19 @@ class ButtonAppBar extends React.Component {
                     </IconButton>
                     <Typography style={AppBarStyles} variant="h6" color="inherit" color='inherit'>
                         Muktek
-          </Typography>
-                    <Link className='NavMenu' to="/">Home</Link>
-                    <Link className='NavMenu' to="/login">Login</Link>
+                    </Typography>
+                    <div className='NavMenu'>
+                        <Link to='/'>
+                            <Typography style={AppBarStyles} variant="h6" color="inherit" color='inherit'>
+                                Home
+                        </Typography>
+                        </Link >
+                        <Link to='/login'>
+                            <Typography style={AppBarStyles} variant="h6" color="inherit" color='inherit'>
+                                Login
+                        </Typography>
+                        </Link >
+                    </div>
                 </Toolbar>
                 <Drawer open={this.state.open} onClose={this.toggleDrawer}>
                     <div
@@ -77,16 +87,16 @@ class ButtonAppBar extends React.Component {
                                 <ListItemText style={ListItemTextStyle} primary='Features' />
                             </ListItem>
                             <ListItem button>
-                                <Link className='side' to="/">User</Link>
+                                <Link className='side' to="/users">Users</Link>
                             </ListItem>
                             <Divider />
                             <ListItem button>
-                                <Link className='side' to="/login">Treaments</Link>
+                                <Link className='side' to="/treatments">Treaments</Link>
                             </ListItem>
                         </List>
                     </div>
                 </Drawer>
-            </AppBar>
+            </AppBar >
 
         );
     }

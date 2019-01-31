@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Treatment extends Component {
+export default class Treatments extends Component {
 
     render() {
         return (
