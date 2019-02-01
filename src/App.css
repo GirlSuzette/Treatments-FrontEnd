@@ -46,3 +46,9 @@ a.side {
   text-decoration: none;
   color: #282c34;
 }
+
+.classHome{
+  font-size: 30px;
+  display: flex;
+  
+}
