@@ -59,21 +59,13 @@ class ButtonAppBar extends React.Component {
                     <IconButton onClick={this.toggleDrawer} color="inherit" aria-label="Menu">
                         <MenuIcon />
                     </IconButton>
-                    <Typography style={AppBarStyles} variant="h6" color="inherit" color='inherit'>
+                    <Typography style={AppBarStyles} variant="h6" color="inherit">
                         Muktek
                     </Typography>
-                    <div className='NavMenu'>
-                        <Link to='/'>
-                            <Typography style={AppBarStyles} variant="h6" color="inherit" color='inherit'>
-                                Home
-                            </Typography>
-                        </Link >
-                        <Link to='/login'>
-                            <Typography style={AppBarStyles} variant="h6" color="inherit" color='inherit'>
-                                Login
-                            </Typography>
-                        </Link >
-                    </div>
+
+                    <Link className='NavMenu' to='/'>Home</Link >
+                    <Link className='NavMenu' to='/login'>Login</Link >
+
                 </Toolbar>
                 <Drawer open={this.state.open} onClose={this.toggleDrawer}>
                     <div
@@ -110,5 +102,3 @@ ButtonAppBar.propTypes = {
 
 
 export default withStyles(styles)(ButtonAppBar);
-
-

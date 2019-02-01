@@ -118,7 +118,7 @@ class Login extends React.Component {
                             <TextField
                                 required
                                 id="name"
-                                label="name"
+                                label="Name"
                                 fullWidth
                                 onChange={this.handleChange}
                             />

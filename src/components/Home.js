@@ -4,9 +4,8 @@ export default class About extends Component {
 
     render() {
         return (
-            <div className="classHome">
-                This Home
-            </div>
+            <p className='thisHome'>Treatments</p>
+
         );
     }
 }
