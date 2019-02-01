@@ -53,6 +53,8 @@ class Login extends React.Component {
 
         if (!this.state.showLogIn) {
 
+            this.props.history.push('/users');
+
             const json = {
                 name: this.state.name,
                 email: this.state.email
@@ -132,6 +134,7 @@ class Login extends React.Component {
                         </form>
                     </div>
                 }
+
             </React.Fragment>
 
 

@@ -42,6 +42,7 @@ class Records extends React.Component {
     render() {
 
         return (
+
             <div style={formStyles}>
                 <form onSubmit={this.login}>
                     <TextField
@@ -62,6 +63,7 @@ class Records extends React.Component {
                     <Button type='submit' variant='contained'>Login</Button>
                 </form>
             </div>
+
         );
     }
 }

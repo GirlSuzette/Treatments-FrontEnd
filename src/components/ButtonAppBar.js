@@ -66,12 +66,12 @@ class ButtonAppBar extends React.Component {
                         <Link to='/'>
                             <Typography style={AppBarStyles} variant="h6" color="inherit" color='inherit'>
                                 Home
-                        </Typography>
+                            </Typography>
                         </Link >
                         <Link to='/login'>
                             <Typography style={AppBarStyles} variant="h6" color="inherit" color='inherit'>
                                 Login
-                        </Typography>
+                            </Typography>
                         </Link >
                     </div>
                 </Toolbar>
